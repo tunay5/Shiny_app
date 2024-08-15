@@ -1,0 +1,36 @@
+---
+output: github_document
+---
+
+# Shiny App 
+
+With this basic app you can manipulate your mini datasets that are embedded into your personal sqlite database.
+
+## Necessary Libraries
+
+In order to be able to use this shiny app you have to install certain packages:
+
+```{r eval=FALSE}
+install.packages("shiny")
+install.packages("bs4Dash")
+install.packages("RSQLite")
+install.packages("rhandsontable")
+```
+
+
+\begin{itemize}
+  \item shiny: You have to install shiny package in order to run the server and ui files
+  \item bs4Dash: This is the package that provides beautiful dashboards
+  \item RSQLite: If you want to use this package, you have probably installed this package, since this package provides sqlite services that connects R environment
+  \item rhandsontable: The last package makes us able to make direct specific changes on the table without dealing with codes
+\end{itemize}
+
+
+## Usage 
+![](for_git.PNG)
+
+First you have to specify the file directory of your sqlite database and select the dataframe that you would like to play with, then press to $Import$.
+
+Then on second row, there some tools you can use: add or remove new column/row. You have to determine the type of the column, whether integer or character.
+
+Then, after you finished your adjustments, if you press the $Save$ button, the dataframe will be overwrite current dataframe into the database.
