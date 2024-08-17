@@ -31,6 +31,13 @@ install.packages("rhandsontable")
 
 First you have to specify the file directory of your sqlite database and select the dataframe that you would like to play with, then press to $Import$.
 
-Then on second row, there some tools you can use: add or remove new column/row. You have to determine the type of the column, whether integer or character.
+Then on second row, there are some tools you can use: add or remove new column/row. You have to determine the type of the column, whether integer or character.
 
-Then, after you finished your adjustments, if you press the $Save$ button, the dataframe will be overwrite current dataframe into the database.
+Then, after you finished your adjustments, if you press the $Save$ button, the dataframe will be overwriten in place of the current dataframe into the database.
+
+In order to use this basic app you just have to run the code below
+
+```{r eval=FALSE}
+runApp("Directory of the app")
+```
+
